@@ -1,3 +1,5 @@
+## Your web pages are too big
+
 ![waiting for website](/home/hamish/Documents/lightningtalk/slow-internet-connection--300x294.jpg)
 
 ---
@@ -9,6 +11,17 @@
 - reduce bandwidth on server side
 - overloaded wifi ...
 - SPEED
+
+---
+
+## why should you care?
+
+- less developed countries
+- mobile internet
+- reduce bandwidth on server side
+- overloaded wifi ...
+- SPEED
+- and it's dead easy :)
 
 ---
 
