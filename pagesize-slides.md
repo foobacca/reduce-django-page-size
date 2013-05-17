@@ -33,6 +33,7 @@ works when you run `./manage.py collectstatic`
 ## jquery -> jquip
 
 - "90% of the functionality, 10% of the size"
+- core jquip is 6.6 kB
 
 If you do need full-fat jQuery, use a CDN, and specify the full version number
 
