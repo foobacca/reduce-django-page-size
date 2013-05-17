@@ -45,7 +45,7 @@
 - django-htmlmin
   - young and a bit buggy tbh
   - and only comes on when DEBUG=False - so if you get weird bugs in production ...
-- (also just found htmlmin that might be better - but only found it this morning)
+- html - found it this morning, might be worth looking at
 
 ---
 
@@ -79,6 +79,3 @@ If you do need full-fat jQuery, use a CDN, and specify the full version number
 - if you're using easy_thumbnails, it just works (tm)
 - saves 1/3 to 1/2 of file size while not visibly different
 
----
-
-https://github.com/foobacca/reduce-django-page-size-lightningtalk
