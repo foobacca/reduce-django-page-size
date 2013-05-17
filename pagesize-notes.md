@@ -26,7 +26,9 @@ Gzip compression on server
 
 HTML
 
-- django-htmlmin - young and a bit buggy tbh - and only comes on when DEBUG=False - so if you get weird bugs in production ...
+- django-htmlmin
+  - young and a bit buggy tbh
+  - and only comes on when DEBUG=False - so if you get weird bugs in production ...
 - (also just found htmlmin that might be better - but only found it this morning)
 
 ---
@@ -56,6 +58,7 @@ bootstrap
 image-diet
 
 - https://github.com/samastur/image-diet
+- PIL is great, but images are really not optimised
 - if you're using easy_thumbnails, it just works (tm)
 - saves 1/3 to 1/2 of file size while not visibly different
 
