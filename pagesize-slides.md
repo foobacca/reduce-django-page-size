@@ -22,9 +22,28 @@
 
 ## Types of poor connection
 
+- *slow*
+
+![slow](../img/tortoise-dinosaur.jpg)
+
+---
+
+## Types of poor connection
+
+- slow
+- *latency*
+
+![latency](../img/high_throw.png)
+
+---
+
+## Types of poor connection
+
 - slow
 - latency
-- dropped packets
+- *dropped packets*
+
+![dropped](../img/dropped.jpg)
 
 ---
 
@@ -99,6 +118,7 @@ works when you run `./manage.py collectstatic`
 ## Tools for testing
 
 - Firebug net tab, Yslow
+- http://www.loband.org/loband/simulator.jsp
 - Mac: Network Link Conditioner (GUI), ipfw/dummynet
 - Linux: `tc` scripts
 - Windows: Fiddler, TMNetSim, Network Emulation in Visual Studio, Charles Proxy and others
@@ -115,7 +135,7 @@ works when you run `./manage.py collectstatic`
 
 ## Thank you
 
-Presentation source at https://github.com/foobacca/reduce-django-page-size
+https://github.com/foobacca/reduce-django-page-size
 
 I am Hamish Downer, @hgd20 on twitter, work at Aptivate.
 

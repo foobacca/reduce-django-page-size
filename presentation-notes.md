@@ -30,6 +30,11 @@ SSL vuln ? (BEAST and ...)
 
 ## HTML minification
 
+Example - you've written nicely formatted templates with if, for loops ...
+-> spaced out HTML
+
+Show example from BBC News website
+
 - django-htmlmin
   - young and a bit buggy tbh
   - and only comes on when DEBUG=False - so if you get weird bugs in production ...
