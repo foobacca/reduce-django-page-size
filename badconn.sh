@@ -19,9 +19,16 @@ IFACE=lo  # loopback/localhost
 #IFACE=wlan0
 #IFACE=eth0
 
-LATENCY=250ms
-PKT_LOSS=0.2%
-RATE=256kbit
+LATENCY='250ms'
+PKT_LOSS='2%'
+RATE='256kbit'
+SERVER_PORT=8000
+
+function reset_all {
+    echo "reseting all rules"
+    tc qdisc del dev $IFACE root
+    iptables -t mangle -F OUTPUT
+}
 
 # check if we are root
 if [[ $EUID -ne 0 ]]; then
@@ -40,8 +47,7 @@ elif [[ $# -eq 1 ]]; then
         print_usage
         exit 0
     elif [[ $1 == 'reset' ]]; then
-        echo "reseting all rules"
-        tc qdisc del dev $INTERNAL root >/dev/null 2>&1
+        reset_all
         exit 0
     else
         echo "Unrecognised argument: $1"
@@ -51,6 +57,9 @@ elif [[ $# -eq 1 ]]; then
     fi
 fi
 
+# start by resetting all rules
+reset_all
+
 echo "Setting interface $IFACE to have a latency of $LATENCY, a max speed of"
 echo "$RATE and packet loss of $PKT_LOSS"
 echo
@@ -58,7 +67,13 @@ echo "Use '$0 reset' to put the connection back to normal."
 
 # rate limit and latency
 tc qdisc add dev $IFACE root handle 1:0 netem delay $LATENCY
-tc qdisc add dev $IFACE parent 1:1 handle 10: tbf rate $RATE buffer 1600 limit 3000
+tc qdisc add dev $IFACE parent 1:0 handle 10: htb default 10 # rate $RATE ceil 100Mbit # buffer 1600 limit 3000
+tc class add dev $IFACE parent 10:0 classid 10:1 htb rate 100Mbit ceil 100Mbit
+tc class add dev $IFACE parent 10:1 classid 10:10 htb rate $RATE ceil 100Mbit
+tc class add dev $IFACE parent 10:1 classid 10:20 htb rate $RATE ceil $RATE
+
+iptables -t mangle -A OUTPUT -p tcp --sport $SERVER_PORT -j CLASSIFY --set-class 10:20
+iptables -t mangle -A OUTPUT -p tcp --dport $SERVER_PORT -j CLASSIFY --set-class 10:20
 
 # packet loss
-tc qdisc change dev $IFACE root netem loss $PKT_LOSS
+#tc qdisc change dev $IFACE root netem loss $PKT_LOSS
