@@ -1,12 +1,12 @@
 ## Your web pages are too big
 
-![waiting for website](/home/hamish/Documents/lightningtalk/slow-internet-connection--300x294.jpg)
+![waiting for website](../slow-internet-connection--300x294.jpg)
 
 ---
 
 ## why should you care?
 
-![why should I care](/home/hamish/Documents/lightningtalk/250px_Shrug.jpeg)
+![why should I care](../250px_Shrug.jpeg)
 
 ---
 
@@ -31,12 +31,20 @@
 
 ---
 
+### Types of poor connection
+
+- slow
+- latency
+- dropped packets
+
+---
+
 ## Gzip compression on server
 
 - apache - mod_deflate
 - nginx - HttpGzipModule
 
-![squash it](/home/hamish/Documents/lightningtalk/Orange-Crush.jpg)
+![squash it](../Orange-Crush.jpg)
 
 ---
 
@@ -79,3 +87,18 @@ If you do need full-fat jQuery, use a CDN, and specify the full version number
 - if you're using easy_thumbnails, it just works (tm)
 - saves 1/3 to 1/2 of file size while not visibly different
 
+---
+
+## Tools for testing
+
+- Mac: Network Link Conditioner (GUI), ipfw/dummynet
+- Linux: `tc` scripts
+- Windows: Fiddler, TMNetSim, Network Emulation in Visual Studio, Charles Proxy and others
+
+---
+
+## Examples of low bandwidth sites
+
+- http://www.aptivate.org/
+- http://www.3ieimpact.org/
+- http://www.inasp.info/
