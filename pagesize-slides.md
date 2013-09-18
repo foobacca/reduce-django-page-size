@@ -1,12 +1,12 @@
 ## Your web pages are too big
 
-![waiting for website](../slow-internet-connection--300x294.jpg)
+![waiting for website](../img/slow-internet-connection--300x294.jpg)
 
 ---
 
 ## why should you care?
 
-![why should I care](../250px_Shrug.jpeg)
+![why should I care](../img/shrug.jpg)
 
 ---
 
@@ -20,18 +20,7 @@
 
 ---
 
-## why should you care?
-
-- less developed countries
-- mobile internet
-- reduce bandwidth usage on server side
-- overloaded wifi ...
-- SPEED
-- and it's an easy win
-
----
-
-### Types of poor connection
+## Types of poor connection
 
 - slow
 - latency
@@ -39,21 +28,32 @@
 
 ---
 
+## why should you care?
+
+- less developed countries
+- mobile internet
+- reduce bandwidth usage on server side
+- overloaded wifi ...
+- SPEED
+- *and it's an easy win*
+
+---
+
 ## Gzip compression on server
+
+![squash it](../img/Orange-Crush.jpg)
 
 - apache - mod_deflate
 - nginx - HttpGzipModule
-
-![squash it](../Orange-Crush.jpg)
 
 ---
 
 ## HTML minification
 
 - django-htmlmin
-  - young and a bit buggy tbh
-  - and only comes on when DEBUG=False - so if you get weird bugs in production ...
-- htmlmin - found it this morning, might be worth looking at
+  - https://github.com/cobrateam/django-htmlmin
+- htmlmin
+  - https://github.com/mankyd/htmlmin
 
 ---
 
@@ -68,15 +68,22 @@ works when you run `./manage.py collectstatic`
 ## jquery -> jquip
 
 - "90% of the functionality, 10% of the size"
-- core jquip is 6.6 kB
-
-If you do need full-fat jQuery, use a CDN, and specify the full version number
+- https://github.com/mythz/jquip
 
 ---
 
 ## bootstrap CSS
 
+![squash it](../img/use-what-you-need.jpg)
+
 - don't hit "download", go to "customize" and download just what you need
+
+---
+
+## images
+
+- At the least, do your image resizing on the server
+- easy_thumbnails will do this for you
 
 ---
 
@@ -91,6 +98,7 @@ If you do need full-fat jQuery, use a CDN, and specify the full version number
 
 ## Tools for testing
 
+- Firebug net tab, Yslow
 - Mac: Network Link Conditioner (GUI), ipfw/dummynet
 - Linux: `tc` scripts
 - Windows: Fiddler, TMNetSim, Network Emulation in Visual Studio, Charles Proxy and others
@@ -102,3 +110,13 @@ If you do need full-fat jQuery, use a CDN, and specify the full version number
 - http://www.aptivate.org/
 - http://www.3ieimpact.org/
 - http://www.inasp.info/
+
+---
+
+## Thank you
+
+Presentation source at https://github.com/foobacca/reduce-django-page-size
+
+I am Hamish Downer, @hgd20 on twitter, work at Aptivate.
+
+http://www.aptivate.org/

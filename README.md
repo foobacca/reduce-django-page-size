@@ -17,6 +17,18 @@ mdpress -r pagesize-slides.md
 
 These figures are from a fascinating paper about battery usage on a typical android phone, titled "Who Killed My Battery: Analyzing Mobile Browser Energy Consumption" ([paper](http://crypto.stanford.edu/~dabo/pubs/papers/browserpower.pdf) and [presentation](http://cdn.oreillystatic.com/en/assets/1/event/93/Who Killed My Battery_ Analyzing Mobile Browser Energy Consumption Presentation 1.pdf)).
 
+### Gzip Compression
+
+apache mod_deflate [docs](http://httpd.apache.org/docs/2.2/mod/mod_deflate.html) and [tutorial](http://www.cyberciti.biz/tips/speed-up-apache-20-web-access-or-downloads-with-mod_deflate.html)
+
+nginx HttpGzipModule [docs](http://wiki.nginx.org/HttpGzipModule)
+
+### HTML Minification
+
+[django-htmlmin](https://github.com/cobrateam/django-htmlmin)
+
+[htmlmin](https://github.com/mankyd/htmlmin) and [docs](https://htmlmin.readthedocs.org/en/latest/)
+
 ### Tools
 
 OS X development tools include the [Network Link Conditioner](http://9to5mac.com/2011/08/10/new-in-os-x-lion-network-link-conditioner-utility-lets-you-simulate-internet-and-bandwidth-conditions/) which has some preset link types, or lets you specify your own combination of speed, latency and dropped packets.
