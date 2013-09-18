@@ -45,7 +45,7 @@
 - django-htmlmin
   - young and a bit buggy tbh
   - and only comes on when DEBUG=False - so if you get weird bugs in production ...
-- html - found it this morning, might be worth looking at
+- htmlmin - found it this morning, might be worth looking at
 
 ---
 
