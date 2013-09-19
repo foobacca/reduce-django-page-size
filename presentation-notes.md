@@ -87,6 +87,12 @@ TODO: what sites to show?
 Show in browser - log out, show firebug net tab, yslow
 TODO: what sites to show?
 
+CUP
+
+- full fat http://journals.cambridge.org/ 913k (empty) 127k (full)
+- mobile/low b/w http://jnls.cup.org/ 107k (empty) 3.6k (full) and 50k is images
+  to make the submit button - could be CSS instead
+
 ## Thank you
 
 TODO: Add: aptivate and twitter logo
