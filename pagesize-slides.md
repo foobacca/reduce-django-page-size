@@ -64,6 +64,13 @@
 
 - apache - mod_deflate
 - nginx - HttpGzipModule
+- mod_pagespeed from Google
+
+---
+
+## Caching
+
+TODO: image/text - ping output? - reuse old clothing?
 
 ---
 
@@ -78,9 +85,9 @@
 
 ## CSS/JS minification
 
-- django-pipeline (or django-compressor)
-
-works when you run `./manage.py collectstatic`
+- django-pipeline
+- django-compressor
+- webassets
 
 ---
 
@@ -102,7 +109,7 @@ works when you run `./manage.py collectstatic`
 ## images
 
 - At the least, do your image resizing on the server
-- easy_thumbnails will do this for you
+- easy-thumbnails will do this for you
 
 ---
 
@@ -110,7 +117,7 @@ works when you run `./manage.py collectstatic`
 
 - https://github.com/samastur/image-diet
 - PIL is great, but images are really not optimised
-- if you're using easy_thumbnails, it just works (tm)
+- if you're using easy-thumbnails, it just works (tm)
 - saves 1/3 to 1/2 of file size while not visibly different
 
 ---
@@ -118,7 +125,7 @@ works when you run `./manage.py collectstatic`
 ## Tools for testing
 
 - Firebug net tab, Yslow
-- http://www.loband.org/loband/simulator.jsp
+- Loband Simulator
 - Mac: Network Link Conditioner (GUI), ipfw/dummynet
 - Linux: `tc` scripts
 - Windows: Fiddler, TMNetSim, Network Emulation in Visual Studio, Charles Proxy and others

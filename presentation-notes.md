@@ -14,11 +14,16 @@ text
 
 different types
 
-TODO: pictures to represent them
+- speed - TODO: lookup values - mobile ...
+- latency - near, far, satellite - TODO: look up values
+- dropped packets - 1% or 2% and things start getting bad
 
-- speed - tortoise (in wooly thing?)
-- latency - watch?
-- dropped packets - juggler dropping balls
+- TODO: measure conference
+netstat -s
+...
+1253853 segments send out
+6598 segments retransmited
+...
 
 ## why should you care?
 
@@ -27,6 +32,10 @@ easy win - let me show you
 ## Gzip compression on server
 
 SSL vuln ? (BEAST and ...)
+
+## Caching
+
+Allow your clients to cache
 
 ## HTML minification
 
@@ -69,6 +78,7 @@ mention easy_thumbnails
 
 ## Tools for testing
 
+demo with loband simulator?
 demo with tc
 TODO: what sites to show?
 

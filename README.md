@@ -19,9 +19,9 @@ These figures are from a fascinating paper about battery usage on a typical andr
 
 ### Gzip Compression
 
-apache mod_deflate [docs](http://httpd.apache.org/docs/2.2/mod/mod_deflate.html) and [tutorial](http://www.cyberciti.biz/tips/speed-up-apache-20-web-access-or-downloads-with-mod_deflate.html)
-
-nginx HttpGzipModule [docs](http://wiki.nginx.org/HttpGzipModule)
+- apache mod_deflate [docs](http://httpd.apache.org/docs/2.2/mod/mod_deflate.html) and [tutorial](http://www.cyberciti.biz/tips/speed-up-apache-20-web-access-or-downloads-with-mod_deflate.html)
+- [nginx HttpGzipModule](http://wiki.nginx.org/HttpGzipModule)
+- [mod_pagespeed](https://developers.google.com/speed/pagespeed/module)
 
 ### HTML Minification
 
@@ -29,7 +29,26 @@ nginx HttpGzipModule [docs](http://wiki.nginx.org/HttpGzipModule)
 
 [htmlmin](https://github.com/mankyd/htmlmin) and [docs](https://htmlmin.readthedocs.org/en/latest/)
 
+### CSS/JS
+
+- [django-pipeline](http://django-pipeline.readthedocs.org/)
+- [webassets](http://webassets.readthedocs.org/)
+- [django-compressor](http://django-compressor.readthedocs.org/) (Note NOT django-compress which is no longer maintained).
+
+- [jquip](https://github.com/mythz/jquip)
+
+### Images
+
+- [easy-thumbnails](http://easy-thumbnails.readthedocs.org/)
+- [image diet](https://github.com/samastur/image-diet)
+
+### Bootstrap
+
+The [customize page](http://getbootstrap.com/customize/)
+
 ### Tools
+
+[Loband Simulator](http://www.loband.org/loband/simulator.jsp)
 
 OS X development tools include the [Network Link Conditioner](http://9to5mac.com/2011/08/10/new-in-os-x-lion-network-link-conditioner-utility-lets-you-simulate-internet-and-bandwidth-conditions/) which has some preset link types, or lets you specify your own combination of speed, latency and dropped packets.
 
