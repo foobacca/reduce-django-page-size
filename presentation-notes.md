@@ -55,11 +55,14 @@ mod page speed
 - resize images and remove metadata
 - and more
 
+Mention SPDY? Less TCP connections
+
 ## Caching
 
 The best way to get quicker is to not do anything, so
 Allow your clients to cache
 etag - allow client to ask "Has this changed?"
+use jquery from CDN, so it might already be in their cache, and will load quicker
 
 ## HTML minification
 
@@ -101,6 +104,8 @@ show screen - load in tab before session starts
 
 resizing in browser - more bandwidth and more battery
 mention easy_thumbnails
+sprites - one image means one request - python lib called glue for working with them
+font image trick for icons - alpha, resize, colour ...
 
 ## image-diet
 
