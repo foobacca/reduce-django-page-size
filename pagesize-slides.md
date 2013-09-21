@@ -64,13 +64,18 @@
 
 - apache - mod_deflate
 - nginx - HttpGzipModule
+- Django - GZipMiddleware
 - mod_pagespeed from Google
 
 ---
 
 ## Caching
 
-TODO: image/text - ping output? - reuse old clothing?
+The best work is no work
+
+![squash it](../img/feet-up.jpg)
+
+- ConditionalGetMiddleware: etag, last-modified
 
 ---
 
@@ -137,6 +142,7 @@ TODO: image/text - ping output? - reuse old clothing?
 - http://www.aptivate.org/
 - http://www.3ieimpact.org/
 - http://www.inasp.info/
+- http://jrnls.cup.org/ (compare with http://journals.cambridge.org/ )
 
 ---
 
