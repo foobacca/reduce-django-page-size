@@ -2,6 +2,8 @@
 
 ![waiting for website](../img/slow-internet-connection--300x294.jpg)
 
+Hamish Downer @hgd20
+
 ---
 
 ## why should you care?
