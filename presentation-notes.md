@@ -15,6 +15,9 @@ pic
 
 pic
 
+- you've got a fast internet connection
+- works fine for me
+
 ## why should you care?
 
 - african universities often have expensive, slow, poorly managed connections (IT staff)
@@ -26,7 +29,7 @@ pic
 different types
 
 - speed - TODO: lookup values - mobile ...
-- latency - near, far, satellite - TODO: look up values
+- latency - near, far, satellite, buffer queues
 - dropped packets - 1% or 2% and things start getting bad - timeout, resend
 
 - TODO: measure conference
