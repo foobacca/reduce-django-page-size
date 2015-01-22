@@ -11,6 +11,8 @@ mdpress -r pagesize-slides.md
 
 `mdpress -r` will compile the presentation and open it in your browser.  You can then make it full screen and press space to go through the slides.
 
+While [presentation-notes.md](https://github.com/foobacca/reduce-django-page-size/blob/0062098c3f0085fa622a87db5b4df50de1b0760d/presentation-notes.md) has the notes I read from while talking to the slides.
+
 ## Sources and references
 
 ### Battery Usage
